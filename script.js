@@ -54,6 +54,20 @@ document.getElementById("phone").addEventListener("input", function () {
 const summary = document.getElementById("summary");
 const counter = document.getElementById("summary-count");
 
+document.getElementById("photo").addEventListener("change", function () {
+
+    const file = this.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            document.getElementById("preview-photo").src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
 summary.addEventListener("input", function () {
     counter.textContent = `${this.value.length} / 300 characters`;
 });
