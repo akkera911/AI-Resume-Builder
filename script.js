@@ -7,8 +7,17 @@ document.getElementById("email").addEventListener("input", function() {
     document.getElementById("preview-email").textContent = this.value;
 });
 
-document.getElementById("summary").addEventListener("input", function() {
-    document.getElementById("preview-summary").textContent = this.value;
+const summary = document.getElementById("summary");
+const counter = document.getElementById("summary-count");
+
+// Limit to 300 characters
+summary.setAttribute("maxlength", "300");
+
+summary.addEventListener("input", function () {
+    counter.textContent = `${this.value.length} / 300 characters`;
+
+    document.getElementById("preview-summary").textContent =
+        this.value || "Professional Summary";
 });
 
 document.getElementById("education").addEventListener("input", function() {
