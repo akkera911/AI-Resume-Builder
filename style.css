@@ -25,3 +25,10 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+#resume-preview {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
