@@ -36,3 +36,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
         e.preventDefault();
     }
 });
+
+document.getElementById("phone").addEventListener("input", function () {
+    document.getElementById("preview-phone").textContent = this.value;
+});
