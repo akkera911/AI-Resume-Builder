@@ -60,3 +60,12 @@ button {
 button:hover {
     background: #1d4ed8;
 }
+
+#preview-photo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+}
