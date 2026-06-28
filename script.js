@@ -17,3 +17,7 @@ document.getElementById("education").addEventListener("input", function() {
 document.getElementById("skills").addEventListener("input", function() {
     document.getElementById("preview-skills").textContent = this.value;
 });
+
+document.getElementById("experience").addEventListener("input", function() {
+    document.getElementById("preview-experience").textContent = this.value;
+});
