@@ -1,3 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("AI Resume Builder Loaded");
+document.getElementById("name").addEventListener("input", function() {
+    document.getElementById("preview-name").textContent = this.value;
 });
