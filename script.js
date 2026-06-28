@@ -41,3 +41,10 @@ document.querySelector("form").addEventListener("submit", function(e) {
 document.getElementById("phone").addEventListener("input", function () {
     document.getElementById("preview-phone").textContent = this.value;
 });
+
+const summary = document.getElementById("summary");
+const counter = document.getElementById("summary-count");
+
+summary.addEventListener("input", function () {
+    counter.textContent = `${this.value.length} / 300 characters`;
+});
