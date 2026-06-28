@@ -21,3 +21,9 @@ document.getElementById("skills").addEventListener("input", function() {
 document.getElementById("experience").addEventListener("input", function() {
     document.getElementById("preview-experience").textContent = this.value;
 });
+
+document.getElementById("download-btn").addEventListener("click", function() {
+    const resume = document.getElementById("resume-preview");
+
+    html2pdf().from(resume).save("resume.pdf");
+});
