@@ -5,14 +5,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>AI Resume Builder</h1>
 
     <form>
-        <input type="text" placeholder="Full Name"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <input type="tel" placeholder="Phone Number"><br><br>
         <input type="text" id="name" placeholder="Full Name"><br><br>
+
         <input type="email" id="email" placeholder="Email"><br><br>
+
+        <input type="tel" placeholder="Phone Number"><br><br>
+
+        <h3>Professional Summary</h3>
         <textarea id="summary" placeholder="Enter Professional Summary"></textarea><br><br>
 
         <h3>Education</h3>
@@ -20,24 +23,24 @@
 
         <h3>Skills</h3>
         <textarea placeholder="Enter Skills"></textarea><br><br>
+
         <h3>Work Experience</h3>
         <textarea placeholder="Enter Work Experience"></textarea><br><br>
 
         <button type="submit">Generate Resume</button>
+    </form>
 
-        <hr>
+    <hr>
 
-        <h2>Resume Preview</h2>
+    <h2>Resume Preview</h2>
 
-        <div id="resume-preview">
+    <div id="resume-preview">
         <h3 id="preview-name">Your Name</h3>
         <p id="preview-email">Your Email</p>
         <p id="preview-summary">Professional Summary</p>
-        </div>
+    </div>
 
-        <h3>Professional Summary</h3>
-        <textarea placeholder="Enter Professional Summary"></textarea><br><br>
-    </form>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
