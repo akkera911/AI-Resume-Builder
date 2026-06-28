@@ -1,5 +1,6 @@
 document.getElementById("name").addEventListener("input", function() {
-    document.getElementById("preview-name").textContent = this.value;
+    document.getElementById("preview-name").textContent =
+    this.value || "Your Name";
 });
 
 document.getElementById("email").addEventListener("input", function() {
