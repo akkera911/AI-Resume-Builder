@@ -3,12 +3,18 @@
 An AI-powered resume builder that helps users create professional ATS-friendly resumes.
 
 ## Features
-- Resume Creation
-- ATS-Friendly Templates
-- PDF Export
-- AI Content Suggestions
-- Job Matching
-- Resume Optimization
+
+- Live Resume Preview
+- PDF Download
+- Professional Resume Layout
+- Responsive Design
+- Resume Form Validation
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
 
 ## Tech Stack
 - React
