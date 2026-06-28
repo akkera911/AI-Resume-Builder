@@ -27,3 +27,12 @@ document.getElementById("download-btn").addEventListener("click", function() {
 
     html2pdf().from(resume).save("resume.pdf");
 });
+
+document.querySelector("form").addEventListener("submit", function(e) {
+    const name = document.getElementById("name").value;
+
+    if (name.trim() === "") {
+        alert("Please enter your name");
+        e.preventDefault();
+    }
+});
