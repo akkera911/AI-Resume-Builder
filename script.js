@@ -9,3 +9,7 @@ document.getElementById("email").addEventListener("input", function() {
 document.getElementById("summary").addEventListener("input", function() {
     document.getElementById("preview-summary").textContent = this.value;
 });
+
+document.getElementById("education").addEventListener("input", function() {
+    document.getElementById("preview-education").textContent = this.value;
+});
